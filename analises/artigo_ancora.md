@@ -42,3 +42,54 @@
 
 ## **SEÇÃO 4 - POR QUE PROGRAMADORES FAZEM CODE REVIEW?**
 
+- O comentário de um desenvolvedor sênior sumarizou muitas das respostas para o por quê fazer code review: "A revisão de código também tem diversas influências benéficas: (1) torna as pessoas menos protetoras em relação ao seu código, (2) permite que outra pessoa entenda o código, resultando em (3) melhor compartilhamento de informações entre a equipe, (4) ajuda a promover convenções de codificação na equipe e (5) contribui para a melhoria do processo geral e da qualidade do código."
+
+    ## **4.A - ENCONTRAR DEFEITOS**
+    - 44% dos gerentes incluidos na pesquisa colocam a busca por defeitos como a principal motivação para as revisões de código, tanto para defeitos de baixo nivel (lógica), quanto de alto nível (erros de design e entre outros).
+    - 383 dos programadores (44%) colocaram a busca por defeitos em primeira prioridade, 204 (23%) em segunda e 96 (11%) em terceira.
+
+    ## **4.B - MELHORIA DE CÓDIGO**
+    - Envolve melhorias em código que não envolvem correções ou defeitos, como melhora na leitura, comentários, consistência, remoção de código não usado e etc.
+    - Para 337 programadores (39%) essa é a primeira prioridade na revisão de código, para 208 (24%) é a segunda e para 135 (15%) é a terceira.
+    - Em 51 casos (31%), gerentes reportaram a melhoria de código como motivação primária.
+    - Entrevistas deram uma ideia da conexão entre a qualidade das revisões de código e os comentários de melhoria do código. Parece ser mas fácil e rápido fazer comentários sobre convenções de equipe, para evitar passar muito tempo conduzindo uma boa revisão de código.
+
+    ## **4.C - SOLUÇÕES ALTERNATIVAS**
+    - Soluções alternativas consideram alterações e comentários sobre como aprimorar o código submetido, adotando uma ideia que leve a uma melhor implementação.
+    - Para 147 programadores (17%) essa é a primeira prioridade na revisão de código, para 202 (23%) é a segunda e para 152 (17%) é a terceira.
+    - Em apenas 4 casos (2%) gerentes a mencionaram como motivação primária.
+
+    ## **4.D - TRANSFERÊNCIA DE CONHECIMENTO**
+    - De acordo com os entrevistados, a revisão de código é uma oportunidade de aprendizado tanto para o autor do código quanto para os revisores. Além disso, as revisões de código são reconhecidas por educar novos desenvolvedores sobre escrita de código.
+    - Gerentes incluiram esse tópico como um dos motivos para a revisão de código, embora nunca como a principal motivação.
+    - Para 73 programadores (8%) essa é a primeira prioridade na revisão de código, para 119 (14%) é a segunda e para 141 (16%) é a terceira.
+
+    ## **4.E - CONSCIÊNCIA E TRANSPARÊNCIA DA EQUIPE**
+    - Gerentes frequentemente mencionavam o conceito de conscientização da equipe como uma motivação para a revisão de código, justificando-a muitas vezes com a noção de "transparência": a equipe não só deve estar ciente da direção tomada pelo código, como também ninguém deve ter permissão para fazer alterações "secretamente" que possam quebrar o código ou alterar funcionalidades.
+    - Os 873 programadores que responderam à pesquisa classificaram a conscientização e a transparência da equipe como fatores muito próximos da transferência de conhecimento.
+    - Para 75 programadores (9%) essa é a primeira prioridade na revisão de código, para 108 (12%) é a segunda e para 149 (17%) é a terceira.
+    - **Embora esse tópico tenha aparecido nos dados finais dessa pesquisa como clara promoção pela revisão de código, pesquisas acadêmicas parecem ter dado pouca atenção a esse assunto.**
+    
+    ## **4.F - COMPARTILHAR A PROPRIEDADE DO CÓDIGO**
+    - Esse conceito está intimamente ligado ao tópico anterior, porém tem foco maior em colaboração ativa e atividades de codificação sobrepostas. Logo, a revisão não serve apenas para conscientizar o time, serve também como meio para ter mais pessoas com conhecimento sobre partes específicas da base de código.
+    - Desenvolvedores e gerentes também acreditam que as revisões melhoram a percepção dos membros da equipe sobre a propriedade compartilhada do código.
+    - Para 51  programadores (6%) essa é a primeira prioridade na revisão de código, para 100  (11%) é a segunda e para 91 (10%) é a terceira.
+
+    ## **4.F - RESUMO**
+    - Na figura abaixo, a barra branca representa o número de desenvolvedores que colocaram esse tópico como sua principal motivação, a barra cinza representa a segunda motivação e a barra preta a terceira motivação.
+
+    <figure align="center">
+    <img src="imagens_docs/motivacoes-review-devs.png" alt="Motivação dos desenvolvedores para a revisão de código">
+    <figcaption>
+        <b>Figura 1:</b> Motivação dos desenvolvedores para a revisão de código.<br>
+        <sub><b>Fonte:</b> Adaptado de Bacchelli & Bird (ICSE 2013) — <i>Expectations, outcomes, and challenges of modern code review</i>.</sub>
+    </figcaption>
+    </figure>
+
+    <figure align="center">
+    <img src="imagens_docs/comentarios-categoria-card.png" alt="Proporção de comentários por categoria de classificação de cartões">
+    <figcaption>
+        <b>Figura 2:</b> Proporção de comentários por categoria de classificação de cartões.<br>
+        <sub><b>Fonte:</b> Adaptado de Bacchelli & Bird (ICSE 2013) — <i>Expectations, outcomes, and challenges of modern code review</i>.</sub>
+    </figcaption>
+    </figure>
