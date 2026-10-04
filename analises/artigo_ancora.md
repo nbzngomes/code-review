@@ -78,18 +78,10 @@
     ## **4.F - RESUMO**
     - Na figura abaixo, a barra branca representa o número de desenvolvedores que colocaram esse tópico como sua principal motivação, a barra cinza representa a segunda motivação e a barra preta a terceira motivação.
 
-    <figure align="center">
-    <img src="imagens_docs/motivacoes-review-devs.png" alt="Motivação dos desenvolvedores para a revisão de código">
-    <figcaption>
-        <b>Figura 1:</b> Motivação dos desenvolvedores para a revisão de código.<br>
-        <sub><b>Fonte:</b> Adaptado de Bacchelli & Bird (ICSE 2013) — <i>Expectations, outcomes, and challenges of modern code review</i>.</sub>
-    </figcaption>
-    </figure>
+    ![Motivação dos desenvolvedores para a revisão de código](imagens_docs/motivacoes-review-devs.png)
+    > **Figura 1:** Motivação dos desenvolvedores para a revisão de código.  
+    > **Fonte:** Adaptado de Bacchelli & Bird (ICSE 2013) — *Expectations, outcomes, and challenges of modern code review*.
 
-    <figure align="center">
-    <img src="imagens_docs/comentarios-categoria-card.png" alt="Proporção de comentários por categoria de classificação de cartões">
-    <figcaption>
-        <b>Figura 2:</b> Proporção de comentários por categoria de classificação de cartões.<br>
-        <sub><b>Fonte:</b> Adaptado de Bacchelli & Bird (ICSE 2013) — <i>Expectations, outcomes, and challenges of modern code review</i>.</sub>
-    </figcaption>
-    </figure>
+    ![Proporção de comentários por categoria de classificação de cartões](imagens_docs/comentarios-categoria-card.png)
+    > **Figura 2:** Proporção de comentários por categoria de classificação de cartões.  
+    > **Fonte:** Adaptado de Bacchelli & Bird (ICSE 2013) — *Expectations, outcomes, and challenges of modern code review*.
