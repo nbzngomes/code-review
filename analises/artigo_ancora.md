@@ -82,6 +82,27 @@
     > **Figura 1:** Motivação dos desenvolvedores para a revisão de código.  
     > **Fonte:** Adaptado de Bacchelli & Bird (ICSE 2013) — *Expectations, outcomes, and challenges of modern code review*.
 
+## **SEÇÃO 5 - RESULTADOS DAS REVISÕES DE CÓDIGO**
+    
+- Separação em duas seções.
+
+    ## **5.A - MOTIVAÇÕES VS. RESULTADOS**
+    - Foi conduzida uma pesquisa de campo indireta com análise de conteúdo de 200 threads (570 comentários) gravados no CodeFlow (ferramente de revisão de código).
+
+    - Melhorias no código: categoria mais frequente, com 165 (29%) comentários. 58 deles sobre usar melhores práticas de codificação, 55 em remover códigos desnecessários ou não usados e 52 em melhorar a legibilidade do código.
+    - Busca de defeitos: embora seja a motivação primária dentre os entrevistados, essa categoria é apenas a quarta mais frequente dentre nove itens, com 78 (14%) comentários. 65 deles sendo de erros lógicos, 6 de erros de alto nível, 5 de segurança e 3 de tratamento incorreto de exceções.
+    - Transferência de conhecimento: 12 comentários foram encontrados sobre essa categoria, sendo ele um direcionamento do autor do código para sites externos com documentações para aprender a lidar com alguns problemas.
+    
     ![Proporção de comentários por categoria de classificação de cartões](imagens_docs/comentarios-categoria-card.png)
     > **Figura 2:** Proporção de comentários por categoria de classificação de cartões.  
     > **Fonte:** Adaptado de Bacchelli & Bird (ICSE 2013) — *Expectations, outcomes, and challenges of modern code review*.
+
+    ## **5.B - IDENTIFICANDO DEFEITOS: QUANDO AS EXPECTATIVAS NÃO CORRESPONDEM À REALIDADE**
+    - A maioria dos comentários sobre defeitos diz respeito a erros lógicos simples, como casos extremos, valores de configuração comuns ou precedência de operadores.
+    - Dentre os dados das entrevistas, é possivel visualizar que: 
+        1 - A maioria dos defeitos encontrados em uma revisão de código com ferramentas é sobre possíveis erros lógicos;
+        2 - Alguns entrevistados reclamaram que a qualidade das revisões é baixa porquê revisores apenas olham erros fáceis, como formatação de código, por exemplo;
+        3 - Outros entrevistados admitem que procuram apenas por "bugs óbvios" quando o código não faz parte de sua base de códigos.
+    - Gerentes mencionaram "encontrar cedo bugs óbvios" e "encontrar ineficiências e erros óbvios" como razões para fazer revisões.
+    - Esse pontos reforçam a razão para que a distância entre o número de comentários entre melhora de código e busca de defeitos seja a evidência adicional de que o resultado das revisões de código não batem com a expectativa principal dos entrevistados de encontrar defeitos.
+
