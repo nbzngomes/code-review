@@ -35,3 +35,10 @@
 - Em um estudo de hábitos de trabalho, Latoza et al. descobriram que muitos problemas encontrados por desenvolvedores eram relacionados ao entendimento racional por trás das mudanças de código e à obtenção de conhecimento de outros membros do time.
 
 ## **SEÇÃO 3 - METODOLOGIA**
+
+- 4 motivos surgiram dentre os entrevistados para a pergunta "O que você espera alcançar ao enviar uma revisão de código?": encontrar defeitos, manter a equipe informada, melhorar a qualidade de código e avaliar o projeto de alto nível.
+
+- Foram executadas diferentes formas de pesquisa, essas sendo: observações e entrevistas com desenvolvedores, classificação de cartas (técnica de ordenação amplamente utilizada em arquitetura da informação para criar modelos mentais e derivar taxonomias a partir de dados de entrada), diagrama de afinidade e pesquisas com desenvolvedores e gerentes. 
+
+## **SEÇÃO 4 - POR QUE PROGRAMADORES FAZEM CODE REVIEW?**
+
