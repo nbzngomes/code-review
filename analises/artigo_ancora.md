@@ -100,9 +100,9 @@
     ## **5.B - IDENTIFICANDO DEFEITOS: QUANDO AS EXPECTATIVAS NÃO CORRESPONDEM À REALIDADE**
     - A maioria dos comentários sobre defeitos diz respeito a erros lógicos simples, como casos extremos, valores de configuração comuns ou precedência de operadores.
     - Dentre os dados das entrevistas, é possivel visualizar que: 
-        1 - A maioria dos defeitos encontrados em uma revisão de código com ferramentas é sobre possíveis erros lógicos;
-        2 - Alguns entrevistados reclamaram que a qualidade das revisões é baixa porquê revisores apenas olham erros fáceis, como formatação de código, por exemplo;
-        3 - Outros entrevistados admitem que procuram apenas por "bugs óbvios" quando o código não faz parte de sua base de códigos.
+        - 1 - A maioria dos defeitos encontrados em uma revisão de código com ferramentas é sobre possíveis erros lógicos;
+        - 2 - Alguns entrevistados reclamaram que a qualidade das revisões é baixa porquê revisores apenas olham erros fáceis, como formatação de código, por exemplo;
+        - 3 - Outros entrevistados admitem que procuram apenas por "bugs óbvios" quando o código não faz parte de sua base de códigos.
     - Gerentes mencionaram "encontrar cedo bugs óbvios" e "encontrar ineficiências e erros óbvios" como razões para fazer revisões.
     - Esse pontos reforçam a razão para que a distância entre o número de comentários entre melhora de código e busca de defeitos seja a evidência adicional de que o resultado das revisões de código não batem com a expectativa principal dos entrevistados de encontrar defeitos.
 
