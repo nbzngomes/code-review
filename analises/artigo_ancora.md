@@ -106,3 +106,21 @@
     - Gerentes mencionaram "encontrar cedo bugs óbvios" e "encontrar ineficiências e erros óbvios" como razões para fazer revisões.
     - Esse pontos reforçam a razão para que a distância entre o número de comentários entre melhora de código e busca de defeitos seja a evidência adicional de que o resultado das revisões de código não batem com a expectativa principal dos entrevistados de encontrar defeitos.
 
+## **SEÇÃO 6 - QUAIS SÃO OS DESAFIOS DA REVISÃO DE CÓDIGO**
+- Separação em seções.
+
+    ## **6.A - REVISÃO DE CÓDIGO É ENTENDIMENTO**
+    - Muitos entrevistados notaram que o entendimento é o principal desafio nas revisões de código.
+    - Para muitos desenvolvedores, a descrição textual da mudança de código não é o suficiente.
+
+    ![Respostas de desenvolvedores em pesquisas sobre o nível de compreensão do código para os resultados da revisão de código.](imagens_docs/nivel-entendimento.png)
+    > **Figura 2:** sobre o nível de compreensão do código para os resultados da revisão de código.  
+    > **Fonte:** Adaptado de Bacchelli & Bird (ICSE 2013) — *Expectations, outcomes, and challenges of modern code review*.
+
+    - Nos comentários de revisões, a segunda categoria mais frequente é sobre entendimento, seja para clarificações do código ou dúvidas dos revisores quanto às alterações.
+    - 91% dos entrevistados (798) responderam positivamente para a questão se toma mais tempo fazer revisões de arquivos que não estão familiarizados,
+    - 82% dos entrevistados (716) também responderam positivamente ao questionamento de se os revisores familiarizados com os arquivos da revisão tem feedback diferente quanto ao tempo consumido nela, quando o revisor tem conhecimento sobre do que se trata o arquivo sendo modificado, os comentários da revisão tendem a terem "detalhes mais profundos" a serem "mais direcionados" e etc.
+
+    ## **6.B - LIDANDO COM AS NECESSIDADES DE COMPREENSÃO**
+    - Revisores tomam caminhos diferentes para entender o contexto das mudanças.
+    - Todas ferramentas de código que vemos em prática entregam apenas suporte básico para entendimento que os revisores precisam.
