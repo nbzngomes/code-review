@@ -141,3 +141,11 @@
   ## **7.B - IMPLICAÇÕES PARA OS PESQUISADORES**
   - **Automatização de tarefas de revisão:** Ferramentas que reforçam as convenções de código do time, checam typos e identificam código não usado já existem para solucionar grande parte do comentários dos revisores, de melhorias de código e de defeitos em baixo nível. Automatizar essas tarefas libera o revisor para fazer uma análise mais detalhada, de forma a encontrar defeitos mais sutís.
   - **Compreensão do programa na prática:** IDEs modernas já vêm com diversas ferramentas para auxiliar na compreensão do contexto, e existe uma conferência inteira (a ICPC) dedicada à compreensão de código, porém todas ferramentas de revisão apresentam ao revisor apenas a visualicação das diferenças nos arquivos alterados.
+
+## **SEÇÃO 8 - LIMITAÇÕES**
+
+- Forte concordância entre múltiplas fontes sobre as expectativas coletadas dos entrevistados, dos gerentes e dos desenvolvedores.
+
+## **SEÇÃO 9 - CONCLUSÃO**
+
+- Entendimento é um componente essencial nas revisões de código.
