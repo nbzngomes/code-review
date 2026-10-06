@@ -40,3 +40,17 @@ Ou seja, a revisão de código humana exige um esforço cognitivo alto, causa in
 Então, se a revisão de código não serve como a principal barreira contra bugs e custa tão caro para a equipe, quais são as defesas reais que um defeito precisa atravessar antes de chegar em produção?
 
 # **DEFESAS DO CÓDIGO E O PAPEL DA REVISÃO**
+
+Se a revisão de código não é a principal responsável por encontrar bugs, então quais são as barreiras que realmente impedem defeitos de chegar ao usuário?
+
+Na prática, um erro precisa passar por várias camadas de proteção. Primeiro vem o compilador, que detecta erros de sintaxe e tipagem. Depois, ferramentas de análise estática identificam problemas comuns automaticamente. Em seguida ocorre a revisão de código, onde alguém avalia se a mudança faz sentido e segue os padrões do projeto. Por fim, os testes verificam se o sistema está funcionando corretamente.
+
+Segundo Capers Jones, em um estudo com mais de 13 mil projetos, a análise estática remove cerca de 85% dos defeitos detectáveis por esse método, a revisão de código remove aproximadamente 50% e os testes unitários cerca de 40%. Quando utilizadas juntas, essas barreiras podem alcançar taxas próximas de 98% de remoção de defeitos.
+
+Isso mostra que a revisão não é a única nem a principal defesa contra bugs. Ela é apenas uma das camadas de proteção do processo de desenvolvimento.
+
+Outro ponto importante é que revisar todo o código não garante que os erros serão eliminados. Um estudo de McIntosh e colaboradores analisou grandes projetos open source e verificou que aproximadamente 87% dos módulos que apresentaram bugs após o lançamento já haviam passado por revisão completa.
+
+O que realmente fez diferença não foi simplesmente revisar, mas sim discutir o código. Os pesquisadores observaram que mudanças aprovadas rapidamente, sem comentários ou sem troca de ideias entre autor e revisor, apresentavam mais defeitos posteriormente.
+
+Portanto, o principal valor da revisão de código não está apenas em encontrar bugs. Seu papel mais importante é promover discussão técnica, compartilhar conhecimento e ajudar a equipe a compreender melhor o sistema. A revisão funciona como mais uma barreira de qualidade, mas seu diferencial é a colaboração entre os desenvolvedores.
