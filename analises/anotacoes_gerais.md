@@ -2,27 +2,31 @@
 
 Pra começar falando sobre o assunto, acho necessário destacar a origem e evolução da code review até o atual momento.
 
-Em 1976 na IBM, Michael Fagan formalizou um processo altamente estruturado de revisão de código, baseado em revisões linha a linha feitas em grupos, com reuniões extensas.
+Em 1976, na IBM, surgiu a Inspeção de Fagan. Era um processo muito formal, presencial, linha por linha, mas tão lento que 20% do tempo era desperdiçado apenas agendando essas reuniões.
 
-Durante anos pesquisadores proveram evidências dos benefícios da inspeção do código, porém a sua adoção é dificultada pela sua forma de abordagem complexa e lenta.
+Nos anos 90, as primeiras ferramentas, como o ICICLE da Bellcore, começaram a levar a revisão para a tela do computador. E foi entre os anos 2000 e 2010 que chegamos no modelo de revisão moderna que domina o mercado. Ela é informal, assíncrona, e ocorre em ferramentas que usamos todo dia, como GitHub, GitLab e CodeFlow.
 
-Devido a essa dificuldade, atualmente muitas organizações adotam práticas de code review mais leves, de forma a limitar ineficiências, sendo a principal delas a utilização de ferramentas assíncronas (GitHub, GitLab, CodeFlow e etc).
+É aqui que nasce a cultura do Pull Request (ou PR). Hoje, o fluxo funciona assim: o desenvolvedor faz uma mudança numa cópia separada (a branch) e abre o PR explicando o que mudou e o porquê. O revisor analisa as diferenças (aquele famoso código verde e vermelho do diff), faz seus comentários e, se estiver tudo certo, aprova e junta ao código oficial.
 
-Essas práticas fazem parte da revisão de código moderna, que pode ser definida como informal, baseada em ferramentas e como prática regular em grandes empresas.
+Porém, essa revisão moderna gerou um gargalo absurdo de tempo. Dados levantados antes da explosão da IA mostram que um desenvolvedor gastava cerca de 6 horas por semana apenas revisando código dos outros. Na Microsoft, a mediana para um PR ser aprovado era de 24 horas, tornando essa a etapa mais lenta de todo o desenvolvimento. Para contornar isso, o Google teve que impor a regra de fazer revisões minúsculas, de apenas 24 linhas por mudança, para conseguir respostas em menos de 4 horas.
+
+É por isso que, de 2024 para cá, o mercado começou a migrar para a "Revisão com IA", onde bots (como o uReview da Uber e o Amazon Q) revisam o PR antes mesmo do humano ler.
 
 Mas já que o Code Review se tornou uma prática diária em quase toda empresa de software, isso nos leva à nossa primeira questão: Por que as equipes revisam o código umas das outras? O motivo que os desenvolvedores declaram para essa prática é o que realmente acontece na prática?
 
 # **POR QUE É FEITA A REVISÃO DE CÓDIGO?**
 
-Quando perguntados, 44% dos desenvolvedores (e a maioria dos gerentes) nos estudos feitos Bacchelli & Bird dentro da Microsoft afirmam que a motivação primária das revisões de código é encontrar defeitos. A expectativa geral é que o revisor seja um "filtro" final para impedir que bugs cheguem em produção.
+Se você perguntar para a equipe, o motivo declarado é quase unânime: "nós revisamos para achar bug". Como podemos ver nos dados da pesquisa de Bacchelli & Bird, 44% dos programadores colocam a busca por defeitos como o 1º motivo para revisar um código. E curiosamente, 44% dos gerentes pensam exatamente igual. A expectativa geral é que o revisor seja um "filtro" implacável.
 
-Contudo, os resultados práticos mostram um cenário diferente. Nesta mesma pesquisa, é possível ver que, na prática, apenas 14% dos comentários em revisões de código são sobre defeitos, geralmente sendo sobre erros de lógica, dessa forma ficando longe dos 29% dos comentários que mais aparecem, estes sendo sobre melhorias no código, como legibilidade e padronização.
+Contudo, os resultados práticos mostram um cenário totalmente diferente: os bugs são achados, sim, mas são poucos e muito simples. Quando os pesquisadores analisaram 570 comentários reais de revisão, a busca por defeitos caiu para um mero segundo plano, representando apenas 14% dos apontamentos. O verdadeiro líder das revisões foi a "Melhoria de código" (como legibilidade e padronização), ocupando 29% do tempo.
 
-E isso não é uma exclusividade daquele estudo. É exatamente nesse ponto que entra a pesquisa feita dentro da Microsoft, que carrega o título "Code Reviews Do Not Find Bugs" (Revisões de código não encontram bugs).
+E tem um detalhe ainda mais revelador: dentro desses 14% de bugs encontrados, a esmagadora maioria (65 comentários) era sobre lógicas muito simples. Falhas profundas de design (6 comentários) ou de segurança (apenas 5 comentários) quase não foram pegas pela revisão humana.
 
-Apesar do título, que não acreditamos ser verdadeiro, visto que bugs são sim encontrados nessas revisões, como constatado anteriormente, os dados que a Microsoft traz confirmam a mesma quebra de expectativa. Eles constataram que apenas cerca de 15% dos comentários apontam possíveis defeitos. Na verdade, pelo menos 50% do esforço da revisão é focado apenas em manutenção de longo prazo.
+E isso não é uma exclusividade desse estudo. O artigo complementar da Microsoft corrobora totalmente com isso. Eles constataram que apenas cerca de 15% dos comentários apontavam um possível bug, enquanto 50% ou mais do esforço da revisão era focado apenas em manutenção a longo prazo.
 
-Analisando essa afirmação, há de se concordar com o diagnóstico do problema que a Microsoft levanta: **o modelo atual é custoso e ineficiente para encontrar defeitos em código (como bugs)**.
+Inclusive, o título do artigo da Microsoft é "Code Reviews Do Not Find Bugs" (Revisões de código não encontram bugs). Nós do grupo consideramos que esse título exagera um pouco, já que os bugs são encontrados sim, mas os dados da Microsoft deixam muito claro que caçar bugs não é, de fato, o foco real que acontece no dia a dia da revisão.
+
+Analisando a afirmação anterior, há de se concordar com o diagnóstico do problema que a Microsoft levanta: **o modelo atual é custoso e ineficiente para encontrar defeitos em código (como bugs)**.
 
 A pesquisa deles revelou dados alarmantes:
 
